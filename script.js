@@ -1,15 +1,21 @@
 window.onload = () => {
 
-    let qr = document.getElementById("qr");
+    let correct = document.getElementById("correct");
+    let mainContent = document.getElementById("mainContainer");
 
-    document.getElementById("date").addEventListener("change", (event) => {
+    document.getElementById("math").addEventListener("input", (event) => {
         let input = event.target.value;
-        checkDate(qr, input);
+        checkAns(correct, mainContent, input);
     });
 }
 
-const checkDate = (qr, input) => {
-    if(input == "2081-10-15"){
-        qr.style.visibility = "visible";
+const checkAns = (correct, mainContent, input) => {
+    if(input == "11"){
+        mainContent.style.visibility = "hidden";
+        correct.innerHTML = "Yes it's 11 INCHES";
+        const fiveSeconds = setTimeout(() => {
+            mainContent.style.height = 0;
+            correct.innerHTML = "Now hurry, seize the gear, to the second floor's even spaces near(202), In a jiffy, like a hat's fall, let's make our way through the hall.";
+        }, 3000);
     }
 }

@@ -25,3 +25,15 @@ h2{
 #qr{
     padding:15px;
 }
+.math{
+    width: 250px;
+    margin:20px;
+}
+
+.correct{
+    font-family: 'Mystery Quest', system-ui;
+    text-align: center;
+    color:#f0c75e;
+    font-size: 30px;
+    padding: 10px;
+}
