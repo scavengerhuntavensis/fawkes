@@ -15,7 +15,7 @@ const checkAns = (correct, mainContent, input) => {
         correct.innerHTML = "Yes it's 11 INCHES";
         const fiveSeconds = setTimeout(() => {
             mainContent.style.height = 0;
-            correct.innerHTML = "Now hurry, seize the gear, to the second floor's even spaces near(202), In a jiffy, like a hat's fall, let's make our way through the hall.";
-        }, 3000);
+            correct.innerHTML = "Now hurry, seize the gear, to the second floor's even spaces near, In a jiffy, like a hat's fall, let's make our way through the hall.";
+        }, 1000);
     }
 }
